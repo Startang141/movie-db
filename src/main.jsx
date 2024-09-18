@@ -2,6 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LandingPage from "./components/pages/LandingPage";
+import DetailMovie from "./components/pages/DetailMovie";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -10,8 +11,8 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
-    path: "/login",
-    element: <div>halo login</div>,
+    path: "/movie/:id",
+    element: <DetailMovie />,
   },
 ]);
 
